@@ -13,6 +13,9 @@ const client = new Client({
     user: "nnbvsaswjyqdmm",
     password: "8786b947a22032928bf3c43912377c218575c14ff325420da94324832d39e581",
     database: "d7ekp8thqdhane",
+    ssl: {
+        rejectUnauthorized: false,
+    },
 });
 
 client.connect((err) =>{
