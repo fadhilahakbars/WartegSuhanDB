@@ -23,6 +23,10 @@ client.connect((err) =>{
     console.log('Database Connected');
 });
 
+app.get('/', (req, res) => {
+    res.send('Database Connected');
+});
+
 app.get('/user', (req, res) => {
     const query = `SELECT username, password, type FROM users WHERE username = '${req.query.user}' AND password = '${req.query.pass}'`;
     client.query(query, (err, results) => {
