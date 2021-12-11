@@ -8,11 +8,11 @@ const { response } = require('express');
 const port = process.env.PORT || 3000;
 const client = new Client({
     // Lengkapi koneksi dengan database
-    host: "localhost",
+    host: "ec2-184-73-25-2.compute-1.amazonaws.com",
     port: 5432,
-    user: "postgres",
-    password: "fadil123",
-    database: "postgres",
+    user: "nnbvsaswjyqdmm",
+    password: "8786b947a22032928bf3c43912377c218575c14ff325420da94324832d39e581",
+    database: "d7ekp8thqdhane",
 });
 
 client.connect((err) =>{
